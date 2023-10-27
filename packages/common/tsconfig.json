@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.common.json",
+  "compilerOptions": {
+    "noEmit": false, // Referenced project may not disable emit.
+    "outDir": "./build", // Emit here. Compilation required because it used as reference
+    "rootDir": "./src", // Common, but excepted, path for all compiled files in outDir 
+    "composite": true, // Indicates to the TypeScript compiler that these packages will be part of a project composed of multiple packages
+    "declaration": true,
+    "declarationMap": true,
+    "incremental": true,
+  },
+  "include": [
+    "src/**/*",
+  ],
+}

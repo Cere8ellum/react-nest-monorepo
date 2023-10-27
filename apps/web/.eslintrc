@@ -1,0 +1,33 @@
+{
+    "root": true,
+    "extends": [
+        "../../.eslintrc.common.js",
+        "plugin:react/recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true // JSX-compatible
+        }
+    },
+    "ignorePatterns": [
+        "dummy.ts",
+        "**/*.test.*",
+        "customTemplate.js"
+    ],
+    "rules": {
+        "react/jsx-uses-react": "off",
+        "react/react-in-jsx-scope": "off",
+        "@typescript-eslint/no-misused-promises": "off" // To avoid of Promise-returning function provided to attribute where a void return
+    },
+    "env": {
+        "browser": true
+    },
+    "plugins": [
+        "react"
+    ],
+    "settings": {
+        "react": {
+            "version": "detect" // Tell eslint-plugin-react to automatically detect the latest version of react.
+        }
+    }
+}
