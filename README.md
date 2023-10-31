@@ -9,15 +9,16 @@
 >
 > 1. Select Workspace version of Typescript
 > 2. Restart TS Server
->    ⋅⋅1. Close all files
->    ⋅⋅2. Open [dummy.ts](./apps/web/dummy.ts)
->    ⋅⋅3. Restart TS server by clicking the key combination **Ctrl+Shift+P**, and next choose **TypeScript: Restart TS Server**.
+>    i. Close all files
+>    ii. Open [dummy.ts](./apps/web/dummy.ts)
+>    iii. Restart TS server by clicking the key combination **Ctrl+Shift+P**, and next choose **TypeScript: Restart TS Server**.
 
 ## Common apps:
 
 > If you add a new common package into [./packages/](./packages), please don't forget to:
-> Add paths into **paths** section in [tsconfig.common.json](./tsconfig.common.json)
-> Add paths into **resolve** section in an every common config of webpack.
+>
+> 1.  Add paths into **paths** section in [tsconfig.common.json](./tsconfig.common.json)
+> 2.  Add paths into **resolve** section in an every common config of webpack.
 
 ## Run some command from list:
 
