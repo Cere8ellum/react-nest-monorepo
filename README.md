@@ -9,9 +9,9 @@
 >
 > 1. Select Workspace version of Typescript
 > 2. Restart TS Server
->    1. Close all files
->    2. Open [dummy.ts](./apps/web/dummy.ts)
->    3. Restart TS server by clicking the key combination **Ctrl+Shift+P**, and next choose **TypeScript: Restart TS Server**.
+>    - Close all files
+>    - Open [dummy.ts](./apps/web/dummy.ts)
+>    - Restart TS server by clicking the key combination **Ctrl+Shift+P**, and next choose **TypeScript: Restart TS Server**.
 
 ## Common apps:
 
@@ -38,6 +38,9 @@ npm run start:prod
 
 ```bash
 npm run build-api:dev
+```
+
+```bash
 npm run build-web:dev
 ```
 
@@ -45,6 +48,9 @@ npm run build-web:dev
 
 ```bash
 npm run build-api:prod
+```
+
+```bash
 npm run build-web:prod
 ```
 
