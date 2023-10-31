@@ -1,5 +1,6 @@
 {
     "editor.formatOnSave": true,
+    "editor.formatOnPaste": false,
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },

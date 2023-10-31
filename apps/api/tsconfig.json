@@ -3,14 +3,9 @@
   "compilerOptions": {
     "emitDecoratorMetadata": true, // Enables experimental support for emitting type metadata for decorators
     "experimentalDecorators": true, // Enables experimental support for decorators, which is a version of decorators that predates the TC39 standardization process.
-    "baseUrl": "./",
+    "baseUrl": ".",
   },
-  "references": [
-    {
-      "path": "../../packages/common", // Path relative to the baseUrl
-    }
-  ],
   "include": [
     "src/**/*",
-  ],
+  ]
 }

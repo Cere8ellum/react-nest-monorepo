@@ -1,6 +1,6 @@
 import * as styles from "./home.module.scss";
 import React from "react";
-import { TResponse } from "common/types/TResponse";
+import { TResponse } from "@monorepo/types/TResponse";
 import { useAppSelector, useAppDispatch } from "../../core/store/redux/hooks";
 import * as reduxStore from "../../core/store/redux/slices/helloSlice";
 import { helloStore as mobxStore } from "../../core/store/mobx";

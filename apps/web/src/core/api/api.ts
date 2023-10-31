@@ -1,7 +1,12 @@
 import axios from "axios";
-import { TResponse } from "common/types/TResponse";
+import { TResponse } from "@monorepo/types/TResponse";
+import { makeUrlFromEnv } from "@monorepo/utils/makeUrlFromEnv";
 
-const BASE_API_URL = `${process.env.API_SERVER}:${process.env.API_PORT}/${process.env.API_ENDPOINT}`;
+const BASE_API_URL = makeUrlFromEnv(
+  process.env.API_SERVER,
+  process.env.API_PORT,
+  process.env.API_ENDPOINT
+);
 
 // Base
 const api = axios.create({

@@ -4,10 +4,6 @@
   "description": "Monorepo to start fullstack dev using React and Nest",
   "homepage": "https://github.com/Cere8ellum/react-nest-monorepo",
   "author": "Cere8ellum",
-  "workspaces": [
-    "apps/*",
-    "common"
-  ],
   "config": {
     "web_dev": "--config apps/web/__config__/webpack/dev.config.js",
     "web_prod": "--config apps/web/__config__/webpack/prod.config.js",

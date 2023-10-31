@@ -1,8 +1,8 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
-import { createLogger } from "redux-logger";
+// import { createLogger } from "redux-logger";
 import { helloSlice } from "./slices/helloSlice";
 
-const loggerMiddleware = createLogger();
+// const loggerMiddleware = createLogger();
 
 // Create the root reducer independently to obtain the RootState type
 const rootReducer = combineReducers({

@@ -45,7 +45,18 @@ module.exports = {
   },
   // Modules resolved
   resolve: {
-    extensions: ["tsx", ".ts", ".js"],
+    extensions: [".tsx", ".ts", ".js"],
+    // To avoid of issue with paths (tsconfig)
+    alias: {
+      "@monorepo/utils": path.resolve(
+        __dirname,
+        "../../../../packages/utils/src"
+      ),
+      "@monorepo/types": path.resolve(
+        __dirname,
+        "../../../../packages/types/src"
+      ),
+    },
   },
   module: {
     strictExportPresence: true, // Strict mod to avoid of importing non-existent objects

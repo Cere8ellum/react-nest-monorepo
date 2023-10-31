@@ -1,5 +1,7 @@
 # Monorepo including api, web, and common paths
 
+## Environment and Intellisense:
+
 > See [env files](./env) to understand what urls should be used
 
 > To eliminate Typescript (React) errors caused by Intellisense of VS Code,
@@ -10,6 +12,12 @@
 >    ⋅⋅1. Close all files
 >    ⋅⋅2. Open [dummy.ts](./apps/web/dummy.ts)
 >    ⋅⋅3. Restart TS server by clicking the key combination **Ctrl+Shift+P**, and next choose **TypeScript: Restart TS Server**.
+
+## Common apps:
+
+> If you add a new common package into [./packages/](./packages), please don't forget to:
+> Add paths into **paths** section in [tsconfig.common.json](./tsconfig.common.json)
+> Add paths into **resolve** section in an every common config of webpack.
 
 ## Run some command from list:
 

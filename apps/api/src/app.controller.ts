@@ -1,6 +1,6 @@
 import { Controller, Get, HttpStatus } from "@nestjs/common";
 import { AppService } from "./app.service";
-import { TResponse } from "common/types/TResponse";
+import { TResponse } from "@monorepo/types/TResponse";
 import { ApiTags } from "@nestjs/swagger";
 
 @ApiTags("Api module")

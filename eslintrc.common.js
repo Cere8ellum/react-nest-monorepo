@@ -17,6 +17,7 @@ module.exports = {
   },
   ignorePatterns: ["__config__/webpack", "node_modules", "build"],
   rules: {
+    "max-len": ["error", { code: 130, ignoreUrls: true, comments: 150 }],
     "@typescript-eslint/no-unsafe-assignment": "off",
     "@typescript-eslint/no-unsafe-member-access": "off",
     "@typescript-eslint/no-explicit-any": "off",

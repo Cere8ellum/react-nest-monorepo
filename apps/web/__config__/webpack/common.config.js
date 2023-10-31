@@ -115,6 +115,17 @@ module.exports = {
   // Modules resolved
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
+    // To avoid of issue with paths (tsconfig)
+    alias: {
+      "@monorepo/utils": path.resolve(
+        __dirname,
+        "../../../../packages/utils/src"
+      ),
+      "@monorepo/types": path.resolve(
+        __dirname,
+        "../../../../packages/types/src"
+      ),
+    },
   },
   module: {
     strictExportPresence: true, // Strict mod to avoid of importing non-existent objects
@@ -123,17 +134,26 @@ module.exports = {
       {
         test: /\.[jt]sx?$/,
         exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-          options: {
-            cacheDirectory: true, // Using a cache to avoid of recompilation
-            presets: [
-              "@babel/preset-env",
-              "@babel/preset-react",
-              "@babel/preset-typescript",
-            ],
+        use: [
+          {
+            loader: "babel-loader",
+            options: {
+              cacheDirectory: true, // Using a cache to avoid of recompilation
+              presets: [
+                "@babel/preset-env",
+                "@babel/preset-react",
+                "@babel/preset-typescript",
+              ],
+            },
           },
-        },
+          {
+            loader: "ts-loader",
+            options: {
+              transpileOnly: true,
+              projectReferences: true, // References in tsconfig
+            },
+          },
+        ],
       },
       // --- HTML
       { test: /\.(html)$/, use: ["html-loader"] },

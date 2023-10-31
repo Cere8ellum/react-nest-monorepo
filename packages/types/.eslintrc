@@ -1,6 +1,6 @@
 {
     "root": true,
     "extends": [
-        "../../.eslintrc.common.js"
+        "../../eslintrc.common.js"
     ]
 }

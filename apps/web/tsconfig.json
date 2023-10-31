@@ -24,7 +24,7 @@
         ],
     },
     "files": [
-        "src/types/images.d.ts",
+        "src/types/images.d.ts"
     ],
     "include": [
         "src/**/*.ts",

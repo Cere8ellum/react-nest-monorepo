@@ -16,11 +16,14 @@
     "noImplicitAny": true, // Raise error if the type "any" is specified somewhere
     "noImplicitThis": true, // Raise error on "this" expressions with an implied "any" type
     "noUnusedLocals": true, // Raise errors on unused local variables
-    // We can import packages without an absolute path
+    // Import packages without an absolute path
     "paths": {
-      "common/*": [
-        "../../packages/common/src/*"
+      "@monorepo/types/*": [
+        "../../packages/types/src/*",
+      ],
+      "@monorepo/utils/*": [
+        "../../packages/utils/src/*"
       ]
-    }
+    },
   },
 }
